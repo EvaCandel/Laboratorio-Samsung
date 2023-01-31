@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Formulario Samsung</title>
+    <title>Document</title>
 </head>
 <body>
     <div class="container">
-    <form>
-        <h2>Create account</h2>
-        <label for="nombre">Nombre</label>
-        <input type="text" class="area" name="nombre" id="nombre">
-        <img class="imgerror" src="images/error-icon.svg" alt="error">
-        <img class="imgsuccess" src="images/success-icon.svg" alt="check">
-        <p class="errortext">Rellene este campo</p>
-        
-        <label for="email">Email</label>
-        <input type="email" class="area" name="email" id="email">
-        <img class="imgerror" src="images/error-icon.svg" alt="error">
-        <img class="imgsuccess" src="images/success-icon.svg" alt="check">
-        <p class="errortext">Rellene este campo</p>
-        
-        <label for="password">Clave</label>
-        <input type="password" class="area" name="password" >
-        <img class="imgerror" src="images/error-icon.svg" alt="error">
-        <img class="imgsuccess" src="images/success-icon.svg" alt="check">
-        <p class="errortext">Rellene este campo</p>
-        
-        <label for="password">Confirme su clave</label>
-        <input type="password" class="area" name="password" >
-        <img class="imgerror" src="images/error-icon.svg" alt="error">
-        <img class="imgsuccess" src="images/success-icon.svg" alt="check">
-        <p class="errortext">Rellene este campo</p>
 
-        <input class="button" onclick="send()" type="submit" value="ENVIAR">
-    </form>
+        <form action="" id="form" class="formulario">
+            <h1 class="formulario__titulo">Create Account</h1>
+
+            <div class="nombre">
+            <label for="nombre" class="formulario_label">Nombre</label>
+            <input type="text" id="nombre" value=""  class = "formulario__input" required>
+            <p class="invisible"></p>
+            </div>
+
+            <div class="email">
+            <label for="email" class="formulario_label">Email</label>
+            <input type="text" id="email" value="" class = "formulario__input" required>
+            <p class="invisible"></p>
+            </div>
+
+            <div class="clave">
+            <label for="clave" class="formulario_label">Clave</label>
+            <input type="password" id="clave" value="" class = "formulario__input" required>
+            <p class="invisible"></p>
+            </div>
+
+            <div class="claveConfirm">
+            <label for="claveConfirm" class="formulario_label">Confirme su clave</label>
+            <input type="password" id="claveConfirm" value="" class = "formulario__input" required>
+            <p class="invisible"></p>
+            </div>
+
+            <br><br>
+
+            <input type="button" id="check" value="Enviar" onclick="pulsaBoton()" class="formulario__submit">
+        </form>
+
     </div>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
-</html>
