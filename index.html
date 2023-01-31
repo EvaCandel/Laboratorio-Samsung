@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Samsung</title>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <h2>Create account</h2>
+        <label for="nombre">Nombre</label>
+        <input type="text" class="area" name="nombre" id="nombre">
+        <img class="imgerror" src="images/error-icon.svg" alt="error">
+        <img class="imgsuccess" src="images/success-icon.svg" alt="check">
+        <p class="errortext">Rellene este campo</p>
+        
+        <label for="email">Email</label>
+        <input type="email" class="area" name="email" id="email">
+        <img class="imgerror" src="images/error-icon.svg" alt="error">
+        <img class="imgsuccess" src="images/success-icon.svg" alt="check">
+        <p class="errortext">Rellene este campo</p>
+        
+        <label for="password">Clave</label>
+        <input type="password" class="area" name="password" >
+        <img class="imgerror" src="images/error-icon.svg" alt="error">
+        <img class="imgsuccess" src="images/success-icon.svg" alt="check">
+        <p class="errortext">Rellene este campo</p>
+        
+        <label for="password">Confirme su clave</label>
+        <input type="password" class="area" name="password" >
+        <img class="imgerror" src="images/error-icon.svg" alt="error">
+        <img class="imgsuccess" src="images/success-icon.svg" alt="check">
+        <p class="errortext">Rellene este campo</p>
+
+        <input class="button" onclick="send()" type="submit" value="ENVIAR">
+    </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
